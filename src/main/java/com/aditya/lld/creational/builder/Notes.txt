@@ -1,0 +1,6 @@
+By normal setter injection
+->You can modify the object any time
+->Validations cannot be put on two fields together like Fname+Lname
+->Code readability is very bad
+
+** Can be solved using Builder Design Pattern
