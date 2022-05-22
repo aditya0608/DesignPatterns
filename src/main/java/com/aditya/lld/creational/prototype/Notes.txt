@@ -1,0 +1,10 @@
+Use the Prototype Pattern when creating an instance of a given
+ class is either expensive or complicated.
+
+
+
+ Prototype should be considered when a system must create new
+ objects of many types in a complex class hierarchy.
+
+ A drawback to using Prototype is that making a copy of an
+ object can sometimes be complicated.
