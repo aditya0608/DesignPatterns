@@ -6,8 +6,10 @@ package com.aditya.lld.creational.builder;
     private String phoneNo;
     private String emailId;
     private String address;
-    public String getfName() {
-        return fName;
+    private Student(StudentBuilder studentBuilder)
+    {
+        this.fName=studentBuilder.fName;
+        //rest all fields
     }
     static class StudentBuilder
     {
@@ -42,12 +44,7 @@ package com.aditya.lld.creational.builder;
         }
         public Student build()
         {
-            Student student=new Student();
-            student.fName=fName;
-            student.lName=lName;
-            student.emailId=emailId;
-            student.phoneNo=phoneNo;
-            student.address=address;
+            new Student(this);
             return student;
         }
         public StudentBuilder withName(String fName,String lName)

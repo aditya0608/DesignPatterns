@@ -7,6 +7,5 @@ public class Runner {
         broker.addListener(new MyConsumer());
         broker.addListener(new MyAnotherConsumer());
         broker.pushMessage();
-
     }
 }

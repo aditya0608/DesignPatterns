@@ -14,7 +14,7 @@ public class ModelRegistry {
     //2. Get particular model from the registry
     public MlModel getModel(ModelType modelType)
     {
-        return map.remove(modelType);
+        return map.get(modelType);
     }
 
     //3. Remove model
